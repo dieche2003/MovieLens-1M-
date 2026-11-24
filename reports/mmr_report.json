@@ -1,0 +1,48 @@
+{
+  "eval": "valid positive targets only",
+  "similarity": "cosine over offline movie_bge_emb.pkl 32D vectors",
+  "lambdas": [
+    0.4,
+    0.6,
+    0.8,
+    1.0
+  ],
+  "results": {
+    "0.4": {
+      "lambda": 0.4,
+      "Recall@10": 0.056417489421720736,
+      "Recall@20": 0.11001410437235543,
+      "avg_pairwise_cosine_similarity": 0.06515255797766566,
+      "users": 6040,
+      "topk": 20
+    },
+    "0.6": {
+      "lambda": 0.6,
+      "Recall@10": 0.05162200282087447,
+      "Recall@20": 0.10691114245416079,
+      "avg_pairwise_cosine_similarity": 0.10172771678438382,
+      "users": 6040,
+      "topk": 20
+    },
+    "0.8": {
+      "lambda": 0.8,
+      "Recall@10": 0.05218617771509168,
+      "Recall@20": 0.1004231311706629,
+      "avg_pairwise_cosine_similarity": 0.13008301843359887,
+      "users": 6040,
+      "topk": 20
+    },
+    "1.0": {
+      "lambda": 1.0,
+      "Recall@10": 0.05613540197461213,
+      "Recall@20": 0.09590973201692525,
+      "avg_pairwise_cosine_similarity": 0.1421260756851769,
+      "users": 6040,
+      "topk": 20
+    }
+  },
+  "notes": [
+    "lambda=1 is DIN score ordering; lower lambda trades relevance for diversity.",
+    "No model training, BGE reload or test access."
+  ]
+}

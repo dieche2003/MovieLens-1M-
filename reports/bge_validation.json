@@ -1,0 +1,35 @@
+{
+  "train": {
+    "rows": 2272892,
+    "semantic_rows_checked": 2272892,
+    "history_oracle_queries": 46,
+    "history_and_statistics": "passed",
+    "csv_reload": "passed"
+  },
+  "valid": {
+    "rows": 6040,
+    "semantic_rows_checked": 6040,
+    "history_oracle_queries": 46,
+    "history_and_statistics": "passed",
+    "csv_reload": "passed"
+  },
+  "test": {
+    "rows": 6040,
+    "semantic_rows_checked": 6040,
+    "history_oracle_queries": 46,
+    "history_and_statistics": "passed",
+    "csv_reload": "passed"
+  },
+  "embedding": {
+    "raw_shape": [
+      3883,
+      768
+    ],
+    "pca_shape": [
+      3883,
+      32
+    ],
+    "pca_fit_movies": 3704,
+    "zero_vectors": 0
+  }
+}

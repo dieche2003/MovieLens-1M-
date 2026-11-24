@@ -1,0 +1,58 @@
+{
+  "eval": "valid positive targets only",
+  "long_tail_definition": "training observed count <= 20th percentile (23.00)",
+  "tail_items": 759,
+  "tail_target_count": 20,
+  "channels": {
+    "popular": {
+      "candidate_count_total": 120800,
+      "recall": {
+        "@10": 0.05557122708039492,
+        "@20": 0.09478138222849083,
+        "@50": 0.09478138222849083
+      },
+      "long_tail_candidate_coverage": 0.0,
+      "long_tail_target_recall": 0.0
+    },
+    "itemcf": {
+      "candidate_count_total": 120800,
+      "recall": {
+        "@10": 0.11142454160789844,
+        "@20": 0.185049365303244,
+        "@50": 0.185049365303244
+      },
+      "long_tail_candidate_coverage": 0.025669957686882933,
+      "long_tail_target_recall": 0.0
+    },
+    "two_tower": {
+      "candidate_count_total": 120800,
+      "recall": {
+        "@10": 0.015796897038081806,
+        "@20": 0.03215796897038082,
+        "@50": 0.03215796897038082
+      },
+      "long_tail_candidate_coverage": 0.048801128349788434,
+      "long_tail_target_recall": 0.0
+    },
+    "semantic": {
+      "candidate_count_total": 120800,
+      "recall": {
+        "@10": 0.01861777150916784,
+        "@20": 0.03272214386459803,
+        "@50": 0.03272214386459803
+      },
+      "long_tail_candidate_coverage": 0.5887165021156558,
+      "long_tail_target_recall": 0.0
+    },
+    "merged": {
+      "candidate_count_total": 302000,
+      "recall": {
+        "@10": 0.05557122708039492,
+        "@20": 0.09478138222849083,
+        "@50": 0.24259520451339917
+      },
+      "long_tail_candidate_coverage": 0.08829337094499294,
+      "long_tail_target_recall": 0.0
+    }
+  }
+}

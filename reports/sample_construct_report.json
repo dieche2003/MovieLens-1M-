@@ -1,0 +1,48 @@
+{
+  "sampling": {
+    "seed": 42,
+    "added_random_negatives": 1284763,
+    "anchors_with_zero_quota": 46,
+    "pool_rule": "uniform among training movies first seen strictly before anchor"
+  },
+  "splits": {
+    "train": {
+      "rows": 2272892,
+      "positive": 568223,
+      "negative": 1704669,
+      "positive_rate": 0.25,
+      "users": 6040,
+      "movies": 3704
+    },
+    "valid": {
+      "rows": 6040,
+      "positive": 3545,
+      "negative": 2495,
+      "positive_rate": 0.5869205298013245,
+      "users": 6040,
+      "movies": 1944
+    },
+    "test": {
+      "rows": 6040,
+      "positive": 3513,
+      "negative": 2527,
+      "positive_rate": 0.5816225165562914,
+      "users": 6040,
+      "movies": 1888
+    }
+  },
+  "boundary_timestamp_ties": {
+    "train_valid": 2483,
+    "valid_test": 2544
+  },
+  "notes": [
+    "Explicit-rating binary proxy; not real exposure CTR.",
+    "Train ratio 1:3 includes observed low ratings; validation/test remain observed only.",
+    "No random split. Tie order is deterministic, not causal.",
+    "Per-user leave-out does not ensure global chronological isolation.",
+    "Future positives are not consulted during sampling; false negatives can occur.",
+    "Use timestamp < query time for histories. Fit feature transforms on training only.",
+    "Sampling is uniform over historically observed training catalog, not all raw movies.",
+    "Uniform sampling reduces popularity weighting, but tail improvement requires evaluation."
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "input_dir": "D:\\xiangmu-dianying\\ml-1m",
+  "tables": {
+    "ratings": {
+      "raw_rows": 1000209,
+      "exact_duplicate_rows_removed": 0,
+      "invalid_rows_removed": 0,
+      "normalized_duplicate_rows_removed": 0,
+      "repeated_user_movie_rows_preserved": 0,
+      "clean_rows": 1000209
+    },
+    "movies": {
+      "raw_rows": 3883,
+      "exact_duplicate_rows_removed": 0,
+      "invalid_rows_removed": 0,
+      "normalized_duplicate_rows_removed": 0,
+      "clean_rows": 3883
+    },
+    "users": {
+      "raw_rows": 6040,
+      "exact_duplicate_rows_removed": 0,
+      "invalid_rows_removed": 0,
+      "normalized_duplicate_rows_removed": 0,
+      "clean_rows": 6040
+    }
+  },
+  "orphan_rating_rows": {
+    "missing_user": 0,
+    "missing_movie": 0
+  },
+  "wide_rows": 1000209,
+  "wide_columns": [
+    "user_id",
+    "movie_id",
+    "rating",
+    "timestamp",
+    "rating_datetime",
+    "gender",
+    "age",
+    "occupation",
+    "zip_code",
+    "age_code",
+    "occupation_code",
+    "title",
+    "genres"
+  ],
+  "time_range_utc": [
+    "2000-04-25 23:05:32+00:00",
+    "2003-02-28 17:49:50+00:00"
+  ],
+  "unrated_movies": 177,
+  "rating_distribution": {
+    "1": 56174,
+    "2": 107557,
+    "3": 261197,
+    "4": 348971,
+    "5": 226310
+  },
+  "notes": [
+    "No split, CTR labels, negative sampling or fitted features in stage 1.",
+    "Full-data popularity plot is EDA only; define tail groups using training data later.",
+    "Timestamp ties retain source order; this order does not imply event causality.",
+    "User profiles have no historical timestamps; snapshot availability is an assumption."
+  ]
+}

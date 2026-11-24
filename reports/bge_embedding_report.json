@@ -1,0 +1,16 @@
+{
+  "enabled": true,
+  "source": "ModelScope AI-ModelScope/bge-base-en-v1.5",
+  "local_model": "D:\\xiangmu-dianying\\bge-base-en-v1.5",
+  "raw_dim": 768,
+  "pca_dim": 32,
+  "movies": 3883,
+  "pca_fit_movies": 3704,
+  "pca_fit_scope": "unique movie IDs present in train.csv (catalog snapshot assumption)",
+  "pooling": "CLS + L2 normalization",
+  "instruction": null,
+  "weight_file": "model.safetensors",
+  "weight_sha256": "c7c1988aae201f80cf91a5dbbd5866409503b89dcaba877ca6dba7dd0a5167d7",
+  "explained_variance_ratio_sum": 0.36897194385528564,
+  "note": "MovieLens titles are limited; BGE is ablation only."
+}

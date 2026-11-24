@@ -1,0 +1,41 @@
+{
+  "valid_users": 6040,
+  "valid_positive_targets": 3545,
+  "merged_hits": {
+    "10": 197,
+    "20": 336,
+    "50": 860
+  },
+  "mmr_hits": {
+    "0.4": {
+      "10": 200,
+      "20": 390
+    },
+    "0.6": {
+      "10": 183,
+      "20": 379
+    },
+    "0.8": {
+      "10": 185,
+      "20": 356
+    },
+    "1.0": {
+      "10": 199,
+      "20": 340
+    }
+  },
+  "din_top20_hits": 340,
+  "lambda1_exact_order_matches": 6040,
+  "observed_train_rows": 988129,
+  "observed_train_movies": 3704,
+  "tail_movies": 759,
+  "tail_valid_targets": 20,
+  "tail_candidates_all_users": 850,
+  "unique_tail_candidates_all_users": 244,
+  "candidate_pseudo_label_positive_count": 860,
+  "candidate_pseudo_label_positive_rate": 0.0028476821192052982,
+  "constant_probability_logloss_lower_bound_reference": 0.019534600174877462,
+  "training_events_at_or_after_earliest_valid": 987375,
+  "mmr_04_recall20_relative_change": 0.1470588235294117,
+  "mmr_04_similarity_relative_reduction": 0.5415861750662495
+}

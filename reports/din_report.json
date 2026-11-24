@@ -1,0 +1,51 @@
+{
+  "device": "cpu",
+  "train_rows": 100000,
+  "candidate_rows": 302000,
+  "tail_definition": "training observed movie count <= 20th percentile",
+  "tail_items": 759,
+  "experiments": {
+    "DIN_base": {
+      "training_loss": [
+        0.6090237759780884,
+        0.5028509891223908
+      ],
+      "valid": {
+        "overall": {
+          "AUC": 0.5574238185592424,
+          "LogLoss": 0.6502876996803704,
+          "GAUC": 0.5415757000474598,
+          "rows": 302000,
+          "users_with_both_labels": 860
+        },
+        "long_tail": {
+          "AUC": null,
+          "LogLoss": null,
+          "GAUC": null,
+          "rows": 850
+        }
+      }
+    },
+    "DIN_BGE": {
+      "training_loss": [
+        0.6167526839065551,
+        0.49808614312171934
+      ],
+      "valid": {
+        "overall": {
+          "AUC": 0.5521704480339052,
+          "LogLoss": 0.6421669370089388,
+          "GAUC": 0.5385144755576647,
+          "rows": 302000,
+          "users_with_both_labels": 860
+        },
+        "long_tail": {
+          "AUC": null,
+          "LogLoss": null,
+          "GAUC": null,
+          "rows": 850
+        }
+      }
+    }
+  }
+}

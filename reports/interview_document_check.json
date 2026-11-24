@@ -1,0 +1,14 @@
+{
+  "checked_at": "2026-11-19T17:17:52.915221",
+  "markdown": "D:\\xiangmu-dianying\\面试备考手册.md",
+  "html": "D:\\xiangmu-dianying\\面试备考手册.html",
+  "characters": 34441,
+  "questions": 89,
+  "chapters": 19,
+  "local_links_checked": 11,
+  "missing_links": [],
+  "question_numbers_contiguous": true,
+  "anchors_contiguous": true,
+  "code_fences_balanced": true,
+  "note": "仅文档结构检查；未修改或重跑模型与实验。"
+}
